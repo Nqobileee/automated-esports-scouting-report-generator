@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Scoutly | Automated Esports Scouting</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6e00",
+                        "background-light": "#ffffff",
+                        "background-dark": "#131315",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glow-orange {
+            box-shadow: 0 0 20px rgba(255, 110, 0, 0.15);
+        }
+        .glow-orange-strong {
+            box-shadow: 0 0 30px rgba(255, 110, 0, 0.4);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .bento-card {
+            background: #ffffff;
+            border: 1px solid #f0f0f0;
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: #ff6e00;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#181410] dark:text-white antialiased">
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex justify-center">
+<div class="max-w-7xl w-full flex items-center justify-between glass-nav px-8 py-3 rounded-2xl border border-white/20 shadow-sm">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined text-lg">analytics</span>
+</div>
+<span class="text-xl font-bold tracking-tight">Scoutly</span>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Reports</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Trends</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold tracking-wide hover:glow-orange-strong transition-all">
+                    Trends
+                </button>
+<div class="size-9 rounded-full bg-cover bg-center border-2 border-primary/20" data-alt="User profile avatar placeholder" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDUX2hjW6hNCCtQRBV7uCKML4JtplRVH7LpvxLQmlfmeG0QNuVvL2R8NHreGCGECsnKWiT6oFZu7CyZ0B6HXtjW-I0gnmKVinvVcXl8Pckdt0c_Kw_gWBQboPJemGm7Ar34JrhL1nP0qnyQQ163CPvvAXDt-GmFqBGE_x6_cqM5LFYlYHN_r1-b_C8QazjvfH7u13hUQV33qblx72ohKu5A1MKYp1oXYnkzTwRViDl7IDAW_E0Y9C5ufFubdcmsZ1ELbPzgaD1_kE0');"></div>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto space-y-12">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<div class="lg:col-span-7 flex flex-col justify-center space-y-8 p-10 bg-primary/5 rounded-3xl border border-primary/10 relative overflow-hidden">
+<div class="absolute top-[-10%] right-[-10%] size-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="relative z-10 space-y-4">
+<h1 class="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tighter">
+                        Automated <span class="text-primary">Esports</span> Scouting.
+                    </h1>
+<p class="text-lg text-gray-600 dark:text-gray-400 max-w-xl">
+                        Harness the power of neural engines to generate professional-grade scouting reports instantly. Search any team to begin.
+                    </p>
+</div>
+<div class="relative z-10 flex flex-col md:flex-row gap-3 max-w-lg">
+<div class="flex-1 relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="w-full pl-12 pr-4 py-4 rounded-xl border-none bg-white shadow-sm focus:ring-2 focus:ring-primary text-gray-900" placeholder="Enter team name..." type="text"/>
+</div>
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:glow-orange-strong transition-all flex items-center justify-center gap-2">
+                        Start <span class="material-symbols-outlined">bolt</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-5 rounded-3xl bg-cover bg-center glow-orange" data-alt="Futuristic data dashboard visualization with orange highlights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCcVF2ocm15RZRFbVjNcICkS2NEHiGsgyfGe9zgQNdX06t1pNTrs4LSBljL60rs98U8L5xQ0fw-v-Nm_F0mfHBVV2p9PSaoZv7F39Xlmj5cMm-qjvXX4bdd_viJEQFJeRga3sTrr8iCaICBU7YouG_P0GFa6QtA0-9IdLG4yF48oTh4yIDs6PReK6eLv5oaZ-VkaDxI1T8iCHRGVvFz4I0NBHuhYvGSxzHAl1Y3RHCUIs4NQm1_E0yMchTTWgSRywCuMYkNtB4ttvo');"></div>
+</section>
+<!-- Stats Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="md:col-span-1 bento-card p-8 rounded-3xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">verified</span>
+<h3 class="text-gray-500 font-medium">Model Accuracy</h3>
+</div>
+<div>
+<div class="text-6xl font-black text-primary">87%</div>
+<p class="text-green-600 font-bold flex items-center gap-1 mt-2">
+<span class="material-symbols-outlined text-sm">trending_up</span> +4.2%
+                    </p>
+</div>
+</div>
+<div class="md:col-span-2 bento-card p-8 rounded-3xl flex flex-col gap-6">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold">AUC Dashboard</h3>
+<p class="text-gray-500 text-sm">Prediction confidence over time</p>
+</div>
+<div class="text-2xl font-black">0.92</div>
+</div>
+<div class="h-40 w-full relative">
+<!-- Custom Chart Implementation -->
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 400 100">
+<path d="M0 80 Q 50 20, 100 50 T 200 10 T 300 60 T 400 30" fill="none" stroke="#ff6e00" stroke-linecap="round" stroke-width="4"></path>
+<path d="M0 80 Q 50 20, 100 50 T 200 10 T 300 60 T 400 30 V 100 H 0 Z" fill="url(#grad1)" opacity="0.1"></path>
+<defs>
+<lineargradient id="grad1" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" style="stop-color:#ff6e00;stop-opacity:1"></stop>
+<stop offset="100%" style="stop-color:#ff6e00;stop-opacity:0"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+</div>
+<div class="md:col-span-1 bento-card p-8 rounded-3xl flex flex-col justify-between bg-[#181410] text-white border-none">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">groups</span>
+<h3 class="text-gray-400 font-medium">Training Data</h3>
+</div>
+<div>
+<div class="text-5xl font-black">50k+</div>
+<p class="text-gray-400 text-sm mt-2">Global pro players indexed</p>
+</div>
+</div>
+</section>
+<!-- Feature Section: Data Relationships -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-12 py-12 items-center">
+<div class="space-y-6">
+<h2 class="text-4xl font-black tracking-tight leading-tight">
+                    Data Relationships <br/><span class="text-primary">Evolved.</span>
+</h2>
+<p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                    Our platform doesn't just show stats; it maps the intricate relationships between playstyles, team chemistry, and map control. Real-time sync ensures you're never scouting based on yesterday's meta.
+                </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex items-center gap-3 p-4 rounded-xl border border-gray-100">
+<span class="material-symbols-outlined text-primary">globe</span>
+<span class="font-bold">Global Coverage</span>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-xl border border-gray-100">
+<span class="material-symbols-outlined text-primary">sync</span>
+<span class="font-bold">Live Integration</span>
+</div>
+</div>
+</div>
+<div class="relative h-[400px] rounded-3xl bg-gray-50 flex items-center justify-center overflow-hidden border border-gray-100">
+<!-- Abstract visual representation of data relationships -->
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent"></div>
+<div class="z-10 grid grid-cols-3 gap-8">
+<div class="size-4 bg-primary rounded-full animate-pulse glow-orange-strong"></div>
+<div class="size-4 bg-primary/40 rounded-full"></div>
+<div class="size-4 bg-primary rounded-full animate-pulse glow-orange-strong"></div>
+<div class="size-4 bg-primary/40 rounded-full"></div>
+<div class="size-4 bg-primary rounded-full animate-pulse glow-orange-strong"></div>
+<div class="size-4 bg-primary/40 rounded-full"></div>
+</div>
+<svg class="absolute inset-0 w-full h-full opacity-20" viewbox="0 0 100 100">
+<line stroke="currentColor" stroke-width="0.5" x1="10" x2="90" y1="10" y2="90"></line>
+<line stroke="currentColor" stroke-width="0.5" x1="90" x2="10" y1="10" y2="90"></line>
+</svg>
+</div>
+</section>
+<!-- Insurance/SME & Summary CTA -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+<div class="bg-[#f8f9fa] p-10 rounded-3xl border border-gray-200 flex flex-col justify-between items-start space-y-8">
+<div class="space-y-4">
+<div class="inline-block px-3 py-1 bg-white rounded-full text-xs font-bold uppercase tracking-widest text-primary border border-primary/20">Enterprise</div>
+<h3 class="text-3xl font-bold">Insurance for SME Esports</h3>
+<p class="text-gray-600">Our predictive trends help insurance providers assess risk in the competitive landscape with high precision.</p>
+</div>
+<button class="flex items-center gap-2 bg-white text-black border border-gray-200 px-6 py-3 rounded-xl font-bold hover:border-primary transition-all">
+                    Download Trends <span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<div class="bg-primary p-10 rounded-3xl text-white flex flex-col justify-between items-start space-y-8 glow-orange">
+<div class="space-y-4">
+<div class="inline-block px-3 py-1 bg-white/20 rounded-full text-xs font-bold uppercase tracking-widest text-white">Scouts &amp; Coaches</div>
+<h3 class="text-3xl font-bold">Comprehensive Summary</h3>
+<p class="text-white/80">Get the full picture of team performance, player psychology, and strategic weaknesses in one document.</p>
+</div>
+<button class="flex items-center gap-2 bg-white text-primary px-6 py-3 rounded-xl font-bold hover:shadow-xl transition-all">
+                    Download Full Report <span class="material-symbols-outlined">description</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white border-t border-gray-100 py-16 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined text-lg">analytics</span>
+</div>
+<span class="text-xl font-bold tracking-tight">Scoutly</span>
+</div>
+<div class="flex gap-8">
+<a class="text-gray-500 hover:text-primary transition-colors flex items-center gap-1 font-medium" href="#">
+<span class="material-symbols-outlined text-xl">code</span> GitHub
+                </a>
+<a class="text-gray-500 hover:text-primary transition-colors flex items-center gap-1 font-medium" href="#">
+<span class="material-symbols-outlined text-xl">work</span> Portfolio
+                </a>
+<a class="text-gray-500 hover:text-primary transition-colors flex items-center gap-1 font-medium" href="#">
+<span class="material-symbols-outlined text-xl">link</span> LinkedIn
+                </a>
+<a class="text-gray-500 hover:text-primary transition-colors flex items-center gap-1 font-medium" href="#">
+<span class="material-symbols-outlined text-xl">mail</span> Email
+                </a>
+</div>
+<p class="text-sm text-gray-400">© 2024 Scoutly AI. Built for the next meta.</p>
+</div>
+</footer>
+</body></html>
