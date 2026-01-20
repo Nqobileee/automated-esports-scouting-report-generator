@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --background-dark: #131315;
+  --foreground: #181410;
+  --primary: #ff6e00;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-dark: var(--background-dark);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --font-sans: var(--font-space-grotesk);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #131315;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Custom utility classes */
+.glow-orange {
+  box-shadow: 0 0 20px rgba(255, 110, 0, 0.15);
+}
+
+.glow-orange-strong {
+  box-shadow: 0 0 30px rgba(255, 110, 0, 0.4);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.bento-card {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.bento-card:hover {
+  border-color: #ff6e00;
+  transform: translateY(-2px);
+}
