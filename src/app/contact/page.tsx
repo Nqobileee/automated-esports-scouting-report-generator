@@ -154,28 +154,30 @@ export default function ContactPage() {
                 For general inquiries and support
               </p>
               <a
-                href="mailto:hello@scoutly.ai"
+                href="mailto:nqobilemuyambiri@gmail.com"
                 className="text-[#ff6e00] font-medium mt-3 block hover:underline"
               >
-                hello@scoutly.ai
+                nqobilemuyambiri@gmail.com
               </a>
             </div>
 
             <div className="bento-card p-6 rounded-3xl">
               <div className="bg-[#ff6e00]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                 <span className="material-symbols-outlined text-[#ff6e00] text-2xl">
-                  forum
+                  code
                 </span>
               </div>
-              <h3 className="font-bold text-lg">Discord Community</h3>
+              <h3 className="font-bold text-lg">GitHub</h3>
               <p className="text-gray-500 text-sm mt-1">
-                Join our community of esports enthusiasts
+                Check out my projects and contributions
               </p>
               <a
-                href="#"
+                href="https://github.com/Nqobileee"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#ff6e00] font-medium mt-3 block hover:underline"
               >
-                Join Discord →
+                @Nqobileee →
               </a>
             </div>
 
@@ -192,17 +194,42 @@ export default function ContactPage() {
               <p className="text-[#ff6e00] font-bold mt-3">Within 24 hours</p>
             </div>
 
+            <div className="bento-card p-6 rounded-3xl">
+              <div className="bg-[#ff6e00]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                <span className="material-symbols-outlined text-[#ff6e00] text-2xl">
+                  link
+                </span>
+              </div>
+              <h3 className="font-bold text-lg">LinkedIn</h3>
+              <p className="text-gray-500 text-sm mt-1">
+                Connect with me professionally
+              </p>
+              <a
+                href="https://www.linkedin.com/in/nqobile-muyambiri-423522236"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#ff6e00] font-medium mt-3 block hover:underline"
+              >
+                Nqobile Muyambiri →
+              </a>
+            </div>
+
             <div className="bento-card p-6 rounded-3xl bg-[#181410] text-white border-none">
               <span className="material-symbols-outlined text-[#ff6e00] text-3xl mb-3">
-                business
+                work
               </span>
-              <h3 className="font-bold text-lg">Enterprise</h3>
+              <h3 className="font-bold text-lg">Portfolio</h3>
               <p className="text-gray-400 text-sm mt-1">
-                Need custom solutions for your organization?
+                View my complete work and projects
               </p>
-              <button className="mt-4 bg-[#ff6e00] text-white px-4 py-2 rounded-lg font-bold text-sm hover:glow-orange-strong transition-all">
-                Contact Sales
-              </button>
+              <a
+                href="https://nqobilemportfolio.framer.website/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block bg-[#ff6e00] text-white px-4 py-2 rounded-lg font-bold text-sm hover:glow-orange-strong transition-all"
+              >
+                View Portfolio →
+              </a>
             </div>
           </section>
         </div>

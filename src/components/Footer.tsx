@@ -11,30 +11,36 @@ export default function Footer() {
           <span className="text-xl font-bold tracking-tight">Scoutly</span>
         </Link>
 
-        <div className="flex gap-8">
+        <div className="flex flex-wrap gap-6 md:gap-8">
           <a
-            href="#"
+            href="https://github.com/Nqobileee"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-gray-500 hover:text-[#ff6e00] transition-colors flex items-center gap-1 font-medium"
           >
             <span className="material-symbols-outlined text-xl">code</span>{" "}
             GitHub
           </a>
           <a
-            href="#"
+            href="https://nqobilemportfolio.framer.website/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-gray-500 hover:text-[#ff6e00] transition-colors flex items-center gap-1 font-medium"
           >
             <span className="material-symbols-outlined text-xl">work</span>{" "}
             Portfolio
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/nqobile-muyambiri-423522236"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-gray-500 hover:text-[#ff6e00] transition-colors flex items-center gap-1 font-medium"
           >
             <span className="material-symbols-outlined text-xl">link</span>{" "}
             LinkedIn
           </a>
           <a
-            href="#"
+            href="mailto:nqobilemuyambiri@gmail.com"
             className="text-gray-500 hover:text-[#ff6e00] transition-colors flex items-center gap-1 font-medium"
           >
             <span className="material-symbols-outlined text-xl">mail</span>{" "}
@@ -43,7 +49,7 @@ export default function Footer() {
         </div>
 
         <p className="text-sm text-gray-400">
-          © 2024 Scoutly AI. Built for the next meta.
+          © 2026 Scoutly AI. Built for the next meta.
         </p>
       </div>
     </footer>
