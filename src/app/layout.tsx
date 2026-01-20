@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="light">
+    <html lang="en" className="light" suppressHydrationWarning>
       <body
         className={`${spaceGrotesk.variable} font-sans antialiased bg-white dark:bg-[#131315] text-[#181410] dark:text-white`}
       >
