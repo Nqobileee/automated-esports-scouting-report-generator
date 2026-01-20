@@ -142,94 +142,91 @@ export default function ContactPage() {
           </section>
 
           {/* Contact Info Sidebar */}
-          <section className="space-y-6">
-            <div className="bento-card p-6 rounded-3xl">
-              <div className="bg-[#ff6e00]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                <span className="material-symbols-outlined text-[#ff6e00] text-2xl">
+          <section className="space-y-4">
+            <div className="bento-card p-4 rounded-2xl flex items-center gap-4">
+              <div className="bg-[#ff6e00]/10 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="material-symbols-outlined text-[#ff6e00] text-xl">
                   mail
                 </span>
               </div>
-              <h3 className="font-bold text-lg">Email Us</h3>
-              <p className="text-gray-500 text-sm mt-1">
-                For general inquiries and support
-              </p>
-              <a
-                href="mailto:nqobilemuyambiri@gmail.com"
-                className="text-[#ff6e00] font-medium mt-3 block hover:underline"
-              >
-                nqobilemuyambiri@gmail.com
-              </a>
+              <div className="min-w-0">
+                <h3 className="font-bold text-sm">Email</h3>
+                <a
+                  href="mailto:nqobilemuyambiri@gmail.com"
+                  className="text-[#ff6e00] text-sm hover:underline truncate block"
+                >
+                  nqobilemuyambiri@gmail.com
+                </a>
+              </div>
             </div>
 
-            <div className="bento-card p-6 rounded-3xl">
-              <div className="bg-[#ff6e00]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                <span className="material-symbols-outlined text-[#ff6e00] text-2xl">
+            <div className="bento-card p-4 rounded-2xl flex items-center gap-4">
+              <div className="bg-[#ff6e00]/10 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="material-symbols-outlined text-[#ff6e00] text-xl">
                   code
                 </span>
               </div>
-              <h3 className="font-bold text-lg">GitHub</h3>
-              <p className="text-gray-500 text-sm mt-1">
-                Check out my projects and contributions
-              </p>
-              <a
-                href="https://github.com/Nqobileee"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#ff6e00] font-medium mt-3 block hover:underline"
-              >
-                @Nqobileee →
-              </a>
-            </div>
-
-            <div className="bento-card p-6 rounded-3xl">
-              <div className="bg-[#ff6e00]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                <span className="material-symbols-outlined text-[#ff6e00] text-2xl">
-                  schedule
-                </span>
+              <div className="min-w-0">
+                <h3 className="font-bold text-sm">GitHub</h3>
+                <a
+                  href="https://github.com/Nqobileee"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#ff6e00] text-sm hover:underline"
+                >
+                  @Nqobileee →
+                </a>
               </div>
-              <h3 className="font-bold text-lg">Response Time</h3>
-              <p className="text-gray-500 text-sm mt-1">
-                We aim to respond to all inquiries
-              </p>
-              <p className="text-[#ff6e00] font-bold mt-3">Within 24 hours</p>
             </div>
 
-            <div className="bento-card p-6 rounded-3xl">
-              <div className="bg-[#ff6e00]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                <span className="material-symbols-outlined text-[#ff6e00] text-2xl">
+            <div className="bento-card p-4 rounded-2xl flex items-center gap-4">
+              <div className="bg-[#ff6e00]/10 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="material-symbols-outlined text-[#ff6e00] text-xl">
                   link
                 </span>
               </div>
-              <h3 className="font-bold text-lg">LinkedIn</h3>
-              <p className="text-gray-500 text-sm mt-1">
-                Connect with me professionally
-              </p>
-              <a
-                href="https://www.linkedin.com/in/nqobile-muyambiri-423522236"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#ff6e00] font-medium mt-3 block hover:underline"
-              >
-                Nqobile Muyambiri →
-              </a>
+              <div className="min-w-0">
+                <h3 className="font-bold text-sm">LinkedIn</h3>
+                <a
+                  href="https://www.linkedin.com/in/nqobile-muyambiri-423522236"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#ff6e00] text-sm hover:underline"
+                >
+                  Nqobile Muyambiri →
+                </a>
+              </div>
             </div>
 
-            <div className="bento-card p-6 rounded-3xl bg-[#181410] text-white border-none">
-              <span className="material-symbols-outlined text-[#ff6e00] text-3xl mb-3">
-                work
-              </span>
-              <h3 className="font-bold text-lg">Portfolio</h3>
-              <p className="text-gray-400 text-sm mt-1">
-                View my complete work and projects
-              </p>
-              <a
-                href="https://nqobilemportfolio.framer.website/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-block bg-[#ff6e00] text-white px-4 py-2 rounded-lg font-bold text-sm hover:glow-orange-strong transition-all"
-              >
-                View Portfolio →
-              </a>
+            <div className="bento-card p-4 rounded-2xl flex items-center gap-4 bg-[#181410] text-white border-none">
+              <div className="bg-[#ff6e00]/20 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="material-symbols-outlined text-[#ff6e00] text-xl">
+                  work
+                </span>
+              </div>
+              <div className="min-w-0 flex-1">
+                <h3 className="font-bold text-sm">Portfolio</h3>
+                <a
+                  href="https://nqobilemportfolio.framer.website/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#ff6e00] text-sm hover:underline"
+                >
+                  View my work →
+                </a>
+              </div>
+            </div>
+
+            <div className="bento-card p-4 rounded-2xl flex items-center gap-4">
+              <div className="bg-[#ff6e00]/10 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="material-symbols-outlined text-[#ff6e00] text-xl">
+                  schedule
+                </span>
+              </div>
+              <div className="min-w-0">
+                <h3 className="font-bold text-sm">Response Time</h3>
+                <p className="text-[#ff6e00] text-sm font-medium">Within 24 hours</p>
+              </div>
             </div>
           </section>
         </div>
