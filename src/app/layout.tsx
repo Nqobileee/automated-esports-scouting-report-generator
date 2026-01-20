@@ -20,15 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="light">
-      <head>
+      <body
+        className={`${spaceGrotesk.variable} font-sans antialiased bg-white dark:bg-[#131315] text-[#181410] dark:text-white`}
+      >
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
-      </head>
-      <body
-        className={`${spaceGrotesk.variable} font-sans antialiased bg-white dark:bg-[#131315] text-[#181410] dark:text-white`}
-      >
         {children}
       </body>
     </html>
